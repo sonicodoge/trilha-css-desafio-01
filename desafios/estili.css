@@ -1,0 +1,152 @@
+/* Reset básico para remover margens e padding padrões e garantir um layout consistente */
+* {
+    margin: 0; /* Remove margens padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Define que o preenchimento e bordas são incluídos nas dimensões do elemento */
+}
+
+/* 🔹 Estilo do corpo da página */
+body {
+    background-color: #1e3d58; /* Define a cor de fundo da página */
+    color: white; /* Define a cor do texto */
+    font-family: Arial, sans-serif; /* Define a fonte do corpo */
+    text-align: center; /* Alinha o texto no centro */
+}
+
+/* 🔹 Banner principal */
+.banner {
+    background-image: url("imagens/banner (3).png"); /* Define a imagem de fundo do banner */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do banner */
+    background-position: center; /* Centraliza a imagem de fundo */
+    height: 300px; /* Define a altura do banner */
+    padding: 40px 20px; /* Define o preenchimento interno do banner */
+    display: flex; /* Define o layout flexível */
+    flex-direction: column; /* Organiza os elementos dentro do banner em uma coluna */
+    align-items: center; /* Alinha os itens ao centro na horizontal */
+    justify-content: center; /* Alinha os itens ao centro na vertical */
+}
+
+.banner h1 {
+    color: #00aaff; /* Define a cor do texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Adiciona uma sombra ao texto para dar destaque */
+}
+
+/* 🔹 Estilo do botão "Quero me inscrever" */
+button {
+    border: 2px solid #00aaff; /* Define a borda do botão */
+    background-color: transparent; /* Torna o fundo do botão transparente */
+    color: #00aaff; /* Define a cor do texto do botão */
+    font-size: 16px; /* Define o tamanho da fonte do botão */
+    padding: 12px 24px; /* Define o preenchimento interno do botão */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    transition: all 0.3s ease; /* Define uma transição suave para todas as mudanças */
+    border-radius: 5px; /* Arredonda as bordas do botão */
+    margin-top: 20px; /* Adiciona uma margem superior */
+}
+
+/* Efeito hover para o botão */
+button:hover {
+    background-color: #00aaff; /* Muda a cor de fundo quando o mouse passa sobre o botão */
+    color: white; /* Muda a cor do texto quando o mouse passa sobre o botão */
+    box-shadow: 0 4px 8px rgba(0, 170, 255, 0.6); /* Adiciona uma sombra ao botão */
+}
+
+/* 🔹 Ajuste para o botão "Quero me inscrever" */
+.inscrever {
+    margin-bottom: 50px; /* Adiciona uma margem inferior */
+}
+
+/* 🔹 Seção "O que vou aprender?" */
+#course-content {
+    padding: 40px 20px; /* Adiciona preenchimento interno na seção */
+}
+
+/* 🔹 Estilo dos módulos de aprendizado */
+.modules-list {
+    display: flex; /* Define o layout flexível para os módulos */
+    flex-direction: column; /* Organiza os módulos em uma coluna */
+    align-items: center; /* Alinha os módulos ao centro */
+}
+
+/* Estilo individual dos módulos */
+.module {
+    border: 2px solid #00aaff; /* Define a borda dos módulos */
+    border-radius: 10px; /* Arredonda as bordas dos módulos */
+    padding: 12px; /* Define o preenchimento interno dos módulos */
+    margin: 10px; /* Adiciona uma margem entre os módulos */
+    background-color: #d3d3d3; /* Define a cor de fundo dos módulos */
+    color: grey; /* Define a cor do texto */
+    width: 80%; /* Define a largura dos módulos como 80% da largura da tela */
+    max-width: 400px; /* Define a largura máxima dos módulos */
+}
+
+/* Destaca o texto dentro dos módulos */
+.module span {
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: #00aaff; /* Muda a cor do texto para azul */
+}
+
+/* 🔹 Seção "Transforme o Mundo" */
+#transform-world {
+    background-image: url("imagens/woman-code.png"); /* Define a imagem de fundo da seção */
+    background-size: cover; /* Faz com que a imagem cubra toda a área da seção */
+    background-position: center; /* Centraliza a imagem de fundo */
+    height: 250px; /* Define a altura da seção */
+    display: flex; /* Define o layout flexível */
+    align-items: center; /* Alinha o conteúdo ao centro na vertical */
+    justify-content: center; /* Alinha o conteúdo ao centro na horizontal */
+    font-size: 22px; /* Define o tamanho da fonte do texto */
+    font-weight: bold; /* Define o texto em negrito */
+}
+
+/* 🔹 Seção "Desafios Profissionais" */
+#professional-challenges {
+    background-image: url("imagens/professional-challenges.png"); /* Define a imagem de fundo da seção */
+    background-size: cover; /* Faz com que a imagem cubra toda a área da seção */
+    background-position: center; /* Centraliza a imagem de fundo */
+    padding: 40px 20px; /* Define o preenchimento interno da seção */
+    color: white; /* Define a cor do texto */
+    text-align: center; /* Centraliza o conteúdo */
+    display: flex; /* Define o layout flexível */
+    flex-direction: column; /* Organiza o conteúdo da seção em coluna */
+    align-items: center; /* Alinha os itens ao centro */
+    justify-content: center; /* Alinha os itens ao centro verticalmente */
+    height: 400px; /* Define a altura da seção */
+}
+
+/* Ajuste do título da seção */
+#professional-challenges h2 {
+    color: #00aaff; /* Muda a cor do título */
+    margin-bottom: 15px; /* Adiciona uma margem inferior */
+}
+
+/* Ajuste da imagem dentro da seção */
+#professional-challenges img {
+    max-width: 90%; /* Define a largura máxima da imagem como 90% da largura da seção */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 20px 0; /* Adiciona margens superior e inferior à imagem */
+}
+
+/* 🔹 Rodapé */
+footer {
+    background-color: #003366; /* Define a cor de fundo do rodapé */
+    padding: 20px; /* Adiciona preenchimento interno ao rodapé */
+    color: white; /* Define a cor do texto no rodapé */
+}
+
+/* Imagem do rodapé */
+footer img {
+    width: 150px; /* Define a largura da imagem */
+    margin-bottom: 10px; /* Adiciona uma margem inferior à imagem */
+}
+
+/* 🔹 Links */
+a {
+    color: #00aaff; /* Define a cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+/* Efeito de hover nos links */
+a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado quando o mouse passa sobre o link */
+}
